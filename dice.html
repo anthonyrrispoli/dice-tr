@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author:  Tony Rispoli
+    Class:   Software Engineering
+    Description: Tony's five Dice Roller application for Yahtzee.
+-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Dice Roller</title>
+        <link rel="stylesheet" href="dice.css">
+        <script src="dice.js"></script>
+    </head>
+
+    <!-- Rolls the dice on loading page-->
+    <body onload="RollSixSidedDice()">
+
+        <h1>Dice Roller</h1>
+
+        <p style="float:inline-end;text-align:center;margin-left:200px;">This is a sample dice
+             roller for use with the game of Yahtzee. When the page loads, the dice will roll 
+             automatically. The "roll dice" button is focused, meaning simply pressing ENTER
+            will roll the dice again. Yahtzee uses five dice, so each player's turn only
+            needs to consist of pressing ENTER or "Roll Dice" once. </p>
+
+            <!-- Focuses the button so enter can be pressed to run-->
+        <button type="button" autofocus onclick="RollSixSidedDice()">Roll Dice</button><br><br>
+
+        <!-- Dice variables-->
+        Six Sided Dice: <br></br> <input id="dice1" disabled><br></br><img class="img1"
+         src="dice-6.png">
+        <br></br><input id="dice2" disabled><br></br><img class="img2" src="dice-6.png">
+        <br></br><input id="dice3" disabled><br></br><img class="img3" src="dice-6.png">
+        <br></br><input id="dice4" disabled><br></br><img class="img4" src="dice-6.png">
+        <br></br><input id="dice5" disabled><br></br><img class="img5" src="dice-6.png">
+
+    </body>
+</html>
